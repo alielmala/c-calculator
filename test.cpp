@@ -18,17 +18,23 @@ cin >> a ;
 
 //operations 1
 if(a==1){
+                while(true){
+
     cout << "write var1 then the operation then var2"<<endl;
     cout << "operations are + - * /"<<endl;
     cin >>b>>d>>c;
     if(d=="+"){cout <<"the result is "<< b+c <<endl; }
-    if(d=="-"){cout <<"the result is "<< b-c <<endl;}
-    if(d=="*"){cout <<"the result is "<< b*c <<endl;}
-    if(d=="/"){cout <<"the result is "<< b/c <<endl;}
+    else if(d=="-"){cout <<"the result is "<< b-c <<endl;}
+    else if(d=="*"){cout <<"the result is "<< b*c <<endl;}
+    else if(d=="/"){cout <<"the result is "<< b/c <<endl;}
+    else {cout<<"Invalid operation!"<<endl; continue;}
 
+                }
 }
 //operations 2
 if(a==2){
+                while(true){
+
     cout <<"write var1 then the operation then second var if needed"<<endl;
     cin >>b>>d;
     if (d=="sqrt"){cout <<"the result is "<<sqrt(b)<<endl;}
@@ -37,44 +43,57 @@ if(a==2){
       cout<<"Factorial of " <<b<<" is: "<<fact<<endl;}
 
     else if (d=="power"){ cin >>c; cout <<"the result is "<<pow(b,c)<<endl;}
-}
+else {cout<<"Invalid operation!"<<endl; continue;}
+
+                }}
 //operations 3
 
 if(a==3){
-    cout<<"write the operation then the var"<<endl;
+        while(true){
+        cout<<"write the operation then the var"<<endl;
         cin >> d >>b ;
         if(d=="log"){cout << "the result is "<<log(b)<<endl; }
-        if(d=="log2"){cout << "the result is "<<log2(b)<<endl; }
-        if(d=="log10"){cout << "the result is "<<log10(b)<<endl;
-        if(d=="exp"){cout << "the result is "<<exp(b)<<endl; }
- }
+        else if(d=="log2"){cout << "the result is "<<log2(b)<<endl; }
+        else if(d=="log10"){cout << "the result is "<<log10(b)<<endl;}
+        else if(d=="exp"){cout << "the result is "<<exp(b)<<endl; }
+        else {cout<<"Invalid operation!"<<endl; continue;}
+
+                }
 
 }
 // operation 4
 if(a==4){
+            while(true){
+
         cout <<"write the operaiton then the var" <<endl;
     cout<<"write a before the operation to get the inverse: asin for example" <<endl;
         cin >> d >>b ;
 if (d=="sin"){cout << "the result is "<< sin(b* 3.14159 / 180)<<endl;}
-if (d=="cos"){cout << "the result is "<< cos(b* 3.14159 / 180)<<endl;}
-if (d=="tan"){cout << "the result is "<< tan(b* 3.14159 / 180)<<endl;}
-if (d=="asin"){cout << "the result is "<< asin(b* 3.14159 / 180)<<endl;}
-if (d=="acos"){cout << "the result is "<< acos(b* 3.14159 / 180)<<endl;}
-if (d=="atan"){cout << "the result is "<< atan(b* 3.14159 / 180)<<endl;}
+else if (d=="cos"){cout << "the result is "<< cos(b* 3.14159 / 180)<<endl;}
+else if (d=="tan"){cout << "the result is "<< tan(b* 3.14159 / 180)<<endl;}
+else if (d=="asin"){cout << "the result is "<< asin(b* 3.14159 / 180)<<endl;}
+else if (d=="acos"){cout << "the result is "<< acos(b* 3.14159 / 180)<<endl;}
+ else if (d=="atan"){cout << "the result is "<< atan(b* 3.14159 / 180)<<endl;}
+else {cout<<"Invalid operation!"<<endl; continue;}
 
+                }
 }
 if(a==5){
+            while(true){
+
     cout << "write the operation then the var" <<endl;
     cin >> d >>b ;
 
 if (d=="sinh"){cout << "the result is "<< sinh(b)<<endl;}
-if (d=="cosh"){cout << "the result is "<< cosh(b)<<endl;}
-if (d=="tanh"){cout << "the result is "<< tanh(b)<<endl;}
-if (d=="asinh"){cout << "the result is "<< asinh(b)<<endl;}
-if (d=="acosh"){cout << "the result is "<< acosh(b)<<endl;}
-if (d=="atanh"){cout << "the result is "<< atanh(b)<<endl;}
-}
-        string x;
+else if (d=="cosh"){cout << "the result is "<< cosh(b)<<endl;}
+else if (d=="tanh"){cout << "the result is "<< tanh(b)<<endl;}
+else if (d=="asinh"){cout << "the result is "<< asinh(b)<<endl;}
+else if (d=="acosh"){cout << "the result is "<< acosh(b)<<endl;}
+else if (d=="atanh"){cout << "the result is "<< atanh(b)<<endl;}
+else {cout<<"Invalid operation!"<<endl; continue;}
+
+                }}
+string x;
    cout <<"do you need new operation: type yes or no for answer"<< endl;
     cin >> x;
     if (x=="yes"){continue;}

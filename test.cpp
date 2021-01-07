@@ -23,10 +23,10 @@ if(a==1){
     cout << "write var1 then the operation then var2"<<endl;
     cout << "operations are + - * /"<<endl;
     cin >>b>>d>>c;
-    if(d=="+"){cout <<"the result is "<< b+c <<endl; }
-    else if(d=="-"){cout <<"the result is "<< b-c <<endl;}
-    else if(d=="*"){cout <<"the result is "<< b*c <<endl;}
-    else if(d=="/"){cout <<"the result is "<< b/c <<endl;}
+    if(d=="+"){cout <<"the result is "<< b+c <<endl; break; }
+    else if(d=="-"){cout <<"the result is "<< b-c <<endl;break; }
+    else if(d=="*"){cout <<"the result is "<< b*c <<endl;break; }
+    else if(d=="/"){cout <<"the result is "<< b/c <<endl;break; }
     else {cout<<"Invalid operation!"<<endl; continue;}
 
                 }
@@ -37,12 +37,12 @@ if(a==2){
 
     cout <<"write var1 then the operation then second var if needed"<<endl;
     cin >>b>>d;
-    if (d=="sqrt"){cout <<"the result is "<<sqrt(b)<<endl;}
+    if (d=="sqrt"){cout <<"the result is "<<sqrt(b)<<endl;break; }
 
     else if (d=="factorial"){int i=1;for(i=1;i<=b;i++){fact=fact*i;}
-      cout<<"Factorial of " <<b<<" is: "<<fact<<endl;}
+      cout<<"Factorial of " <<b<<" is: "<<fact<<endl;break; }
 
-    else if (d=="power"){ cin >>c; cout <<"the result is "<<pow(b,c)<<endl;}
+    else if (d=="power"){ cin >>c; cout <<"the result is "<<pow(b,c)<<endl; break; }
 else {cout<<"Invalid operation!"<<endl; continue;}
 
                 }}
@@ -52,10 +52,10 @@ if(a==3){
         while(true){
         cout<<"write the operation then the var"<<endl;
         cin >> d >>b ;
-        if(d=="log"){cout << "the result is "<<log(b)<<endl; }
-        else if(d=="log2"){cout << "the result is "<<log2(b)<<endl; }
-        else if(d=="log10"){cout << "the result is "<<log10(b)<<endl;}
-        else if(d=="exp"){cout << "the result is "<<exp(b)<<endl; }
+        if(d=="log"){cout << "the result is "<<log(b)<<endl; break; }
+        else if(d=="log2"){cout << "the result is "<<log2(b)<<endl;break;  }
+        else if(d=="log10"){cout << "the result is "<<log10(b)<<endl;break; }
+        else if(d=="exp"){cout << "the result is "<<exp(b)<<endl; break; }
         else {cout<<"Invalid operation!"<<endl; continue;}
 
                 }
@@ -68,12 +68,12 @@ if(a==4){
         cout <<"write the operaiton then the var" <<endl;
     cout<<"write a before the operation to get the inverse: asin for example" <<endl;
         cin >> d >>b ;
-if (d=="sin"){cout << "the result is "<< sin(b* 3.14159 / 180)<<endl;}
-else if (d=="cos"){cout << "the result is "<< cos(b* 3.14159 / 180)<<endl;}
-else if (d=="tan"){cout << "the result is "<< tan(b* 3.14159 / 180)<<endl;}
-else if (d=="asin"){cout << "the result is "<< asin(b* 3.14159 / 180)<<endl;}
-else if (d=="acos"){cout << "the result is "<< acos(b* 3.14159 / 180)<<endl;}
- else if (d=="atan"){cout << "the result is "<< atan(b* 3.14159 / 180)<<endl;}
+if (d=="sin"){cout << "the result is "<< sin(b* 3.14159 / 180)<<endl;break; }
+else if (d=="cos"){cout << "the result is "<< cos(b* 3.14159 / 180)<<endl;break; }
+else if (d=="tan"){cout << "the result is "<< tan(b* 3.14159 / 180)<<endl;break; }
+else if (d=="asin"){cout << "the result is "<< asin(b* 3.14159 / 180)<<endl;break; }
+else if (d=="acos"){cout << "the result is "<< acos(b* 3.14159 / 180)<<endl;break; }
+ else if (d=="atan"){cout << "the result is "<< atan(b* 3.14159 / 180)<<endl;break; }
 else {cout<<"Invalid operation!"<<endl; continue;}
 
                 }
@@ -84,12 +84,12 @@ if(a==5){
     cout << "write the operation then the var" <<endl;
     cin >> d >>b ;
 
-if (d=="sinh"){cout << "the result is "<< sinh(b)<<endl;}
-else if (d=="cosh"){cout << "the result is "<< cosh(b)<<endl;}
-else if (d=="tanh"){cout << "the result is "<< tanh(b)<<endl;}
-else if (d=="asinh"){cout << "the result is "<< asinh(b)<<endl;}
-else if (d=="acosh"){cout << "the result is "<< acosh(b)<<endl;}
-else if (d=="atanh"){cout << "the result is "<< atanh(b)<<endl;}
+if (d=="sinh"){cout << "the result is "<< sinh(b)<<endl;break; }
+else if (d=="cosh"){cout << "the result is "<< cosh(b)<<endl;break; }
+else if (d=="tanh"){cout << "the result is "<< tanh(b)<<endl;break; }
+else if (d=="asinh"){cout << "the result is "<< asinh(b)<<endl;break; }
+else if (d=="acosh"){cout << "the result is "<< acosh(b)<<endl;break; }
+else if (d=="atanh"){cout << "the result is "<< atanh(b)<<endl;break; }
 else {cout<<"Invalid operation!"<<endl; continue;}
 
                 }}
@@ -97,7 +97,7 @@ string x;
    cout <<"do you need new operation: type yes or no for answer"<< endl;
     cin >> x;
     if (x=="yes"){continue;}
-    if (x=="no"){break;}
+    else {break;}
     }
 return 0;
 }

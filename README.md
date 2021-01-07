@@ -1,6 +1,6 @@
 # c++calculator
 is simple calcultor that involves these operations:
-Scientific operators have to involve 
+Scientific operators have to involve: 
 1- Simple operators: (+, -, *, /) 
 2- Power functions: (power, square root, factorial) 
 3- Exponential and logarithmic functions: (exp, log, log10, log2) 

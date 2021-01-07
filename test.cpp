@@ -3,6 +3,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main (){
+    while (true){
     int a,fact=1;
     double b,c ;
     string d;
@@ -73,5 +74,11 @@ if (d=="asinh"){cout << "the result is "<< asinh(b)<<endl;}
 if (d=="acosh"){cout << "the result is "<< acosh(b)<<endl;}
 if (d=="atanh"){cout << "the result is "<< atanh(b)<<endl;}
 }
+        string x;
+   cout <<"do you need new operation: type yes or no for answer"<< endl;
+    cin >> x;
+    if (x=="yes"){continue;}
+    if (x=="no"){break;}
+    }
 return 0;
 }

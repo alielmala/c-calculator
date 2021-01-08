@@ -23,16 +23,17 @@ if(a==1){
     cout << "write var1 then the operation then var2"<<endl;
     cout << "operations are + - * /"<<endl;
     cin >>b>>d>>c;
+
     if(d=="+"){cout <<"the result is "<< b+c <<endl; break; }
     else if(d=="-"){cout <<"the result is "<< b-c <<endl;break; }
     else if(d=="*"){cout <<"the result is "<< b*c <<endl;break; }
     else if(d=="/"){cout <<"the result is "<< b/c <<endl;break; }
-    else {cout<<"Invalid operation!"<<endl; continue;}
+    else {cout<<"Invalid operation!"<<endl; break;}
 
                 }
 }
 //operations 2
-if(a==2){
+else if(a==2){
                 while(true){
 
     cout <<"write var1 then the operation then second var if needed"<<endl;
@@ -43,12 +44,12 @@ if(a==2){
       cout<<"Factorial of " <<b<<" is: "<<fact<<endl;break; }
 
     else if (d=="power"){ cin >>c; cout <<"the result is "<<pow(b,c)<<endl; break; }
-else {cout<<"Invalid operation!"<<endl; continue;}
+else {cout<<"Invalid operation!"<<endl; break;}
 
                 }}
 //operations 3
 
-if(a==3){
+else if(a==3){
         while(true){
         cout<<"write the operation then the var"<<endl;
         cin >> d >>b ;
@@ -56,13 +57,13 @@ if(a==3){
         else if(d=="log2"){cout << "the result is "<<log2(b)<<endl;break;  }
         else if(d=="log10"){cout << "the result is "<<log10(b)<<endl;break; }
         else if(d=="exp"){cout << "the result is "<<exp(b)<<endl; break; }
-        else {cout<<"Invalid operation!"<<endl; continue;}
+        else {cout<<"Invalid operation!"<<endl; break;}
 
                 }
 
 }
 // operation 4
-if(a==4){
+else if(a==4){
             while(true){
 
         cout <<"write the operaiton then the var" <<endl;
@@ -74,11 +75,11 @@ else if (d=="tan"){cout << "the result is "<< tan(b* 3.14159 / 180)<<endl;break;
 else if (d=="asin"){cout << "the result is "<< asin(b* 3.14159 / 180)<<endl;break; }
 else if (d=="acos"){cout << "the result is "<< acos(b* 3.14159 / 180)<<endl;break; }
  else if (d=="atan"){cout << "the result is "<< atan(b* 3.14159 / 180)<<endl;break; }
-else {cout<<"Invalid operation!"<<endl; continue;}
+else {cout<<"Invalid operation!"<<endl; break;}
 
                 }
 }
-if(a==5){
+else if(a==5){
             while(true){
 
     cout << "write the operation then the var" <<endl;
@@ -90,9 +91,10 @@ else if (d=="tanh"){cout << "the result is "<< tanh(b)<<endl;break; }
 else if (d=="asinh"){cout << "the result is "<< asinh(b)<<endl;break; }
 else if (d=="acosh"){cout << "the result is "<< acosh(b)<<endl;break; }
 else if (d=="atanh"){cout << "the result is "<< atanh(b)<<endl;break; }
-else {cout<<"Invalid operation!"<<endl; continue;}
+else {cout<<"Invalid operation!"<<endl; break;}
 
                 }}
+
 string x;
    cout <<"do you need new operation: type yes or no for answer"<< endl;
     cin >> x;

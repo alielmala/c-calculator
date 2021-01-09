@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cmath>
-#include <math.h>
 #include <cctype>
 
 using namespace std;
@@ -20,46 +19,46 @@ cin >> a ;
 
 //operations 1
 if(a==1){
-cout << "write var1 then the operation then var2"<<endl;
+cout << "write variable 1 then the operation then variable 2"<<endl;
 cout << "operations are + - * /"<<endl;
 
 
 //check if b is int
 while( b < -2147483647 )
     {
-         cout << "\nNumber of b  ";
+         cout << " Variable 1:  ";
 
          char z ;
          // if failed to read or the character just after the number is not a white space
          if( !( cin >> b ) || ( cin.get(z) && !isspace(z) ) )
          {
-             cout << "Entry must be a whole number! Try again: " ;
+             cout << "Entry must be a number! Try again: " ;
              cin.clear();
              cin.ignore( 500, '\n' );
              b = -2147483648 ; // go through the loop again
          }
 
-         else if( b < 1 )
-            cout << "Number of Bunnies must be a positive number! Try again: " ;
+         else if( b < -2147483647 )
+            cout << "Entry must be a number! Try again:" ;
     }
     cout << "Enter the operation";
     cin>>d;
     while( c < -2147483647 )
     {
-         cout << "\nNumber of c  ";
+         cout << "Variable 2: ";
 
          char z ;
          // if failed to read or the character just after the number is not a white space
          if( !( cin >> c ) || ( cin.get(z) && !isspace(z) ) )
          {
-             cout << "Entry must be a whole number! Try again: " ;
+             cout << "Entry must be number! Try again: " ;
              cin.clear();
              cin.ignore( 500, '\n' );
              c = -2147483648 ; // go through the loop again
          }
 
-         else if( c < 1 )
-            cout << "Number of Bunnies must be a positive number! Try again: " ;
+         else if( c < -2147483647 )
+            cout << "Entry must be a number! Try again: " ;
     }
 
 
@@ -73,48 +72,46 @@ while( b < -2147483647 )
 
 //operations 2
 if(a==2){
-
+cout << "write variable 1 then the operation then variable 2"<<endl<<"*write 0 if you will not use variable 2";
+cout << "Operations are sqrt, power, factorial"<<endl;
 while( b < -2147483647 )
     {
-         cout << "\nNumber of b  ";
+         cout << "Variable 1:  ";
 
          char z ;
          // if failed to read or the character just after the number is not a white space
          if( !( cin >> b ) || ( cin.get(z) && !isspace(z) ) )
          {
-             cout << "Entry must be a whole number! Try again: " ;
+             cout << "Entry must be number! Try again: " ;
              cin.clear();
              cin.ignore( 500, '\n' );
              b = -2147483648 ; // go through the loop again
          }
 
-         else if( b < 1 )
-            cout << "Number of Bunnies must be a positive number! Try again: " ;
+         else if( b < -2147483647 )
+            cout << "Entry must be a number! Try again:" ;
     }
         cout << "Enter the operation";
 
     cin>>d;
-cout<< "Type there for var2 if you will not use it";
     while( c < -2147483647 )
     {
-         cout << "\nNumber of c  ";
+         cout << "Enter Variable 2:  ";
 
          char z ;
          // if failed to read or the character just after the number is not a white space
          if( !( cin >> c ) || ( cin.get(z) && !isspace(z) ) )
          {
-             cout << "Entry must be a whole number! Try again: " ;
+             cout << "Entry must be number! Try again: " ;
              cin.clear();
              cin.ignore( 500, '\n' );
              c = -2147483648 ; // go through the loop again
          }
 
-         else if( c < 1 )
-            cout << "Number of Bunnies must be a positive number! Try again: " ;
+         else if( c < -2147483647 )
+            cout << "Entry must be a number! Try again: " ;
     }
 
-    cout <<"write var1 then the operation then second var if needed"<<endl;
-    cin >>b>>d;
     if (d=="sqrt"){cout <<"the result is "<<sqrt(b)<<endl; }
 
     else if (d=="factorial"){int i=1;for(i=1;i<=b;i++){fact=fact*i;}
@@ -127,30 +124,29 @@ else {cout<<"Invalid operation!"<<endl; ;}
 //operations 3
 
 if(a==3){
-
+cout << "Operations are log, log2, log10, exp"
 while( b < -2147483647 )
     {
-         cout << "\nNumber of b  ";
+         cout << "Variable 1:  ";
 
          char z ;
          // if failed to read or the character just after the number is not a white space
          if( !( cin >> b ) || ( cin.get(z) && !isspace(z) ) )
          {
-             cout << "Entry must be a whole number! Try again: " ;
+             cout << "Entry must be number! Try again: " ;
              cin.clear();
              cin.ignore( 500, '\n' );
              b = -2147483648 ; // go through the loop again
          }
 
-         else if( b < 1 )
-            cout << "Number of Bunnies must be a positive number! Try again: " ;
+         else if( b < -2147483647 )
+            cout << "Entry must be a number! Try again: " ;
     }
         cout << "Enter the operation";
 
     cin>>d;
 
-        cout<<"write the operation then the var"<<endl;
-        cin >> d >>b ;
+
         if(d=="log"){cout << "the result is "<<log(b)<<endl;  }
         else if(d=="log2"){cout << "the result is "<<log2(b)<<endl; }
         else if(d=="log10"){cout << "the result is "<<log10(b)<<endl; }
@@ -163,25 +159,25 @@ while( b < -2147483647 )
 // operation 4
 if(a==4){
 
-    cout <<"write the operaiton then the var" <<endl;
-    cout<<"write a before the operation to get the inverse: asin for example" <<endl;
+    cout <<"Operations are sin. cos, tan" <<endl;
+    cout <<"for inverse: asin, acos, atan"<<endl;
 
 while( b < -2147483647 )
     {
-         cout << "\nNumber of b  ";
+         cout << "Enter Variable 1:  ";
 
          char z ;
          // if failed to read or the character just after the number is not a white space
          if( !( cin >> b ) || ( cin.get(z) && !isspace(z) ) )
          {
-             cout << "Entry must be a whole number! Try again: " ;
+             cout << "Entry must be number! Try again: " ;
              cin.clear();
              cin.ignore( 500, '\n' );
              b = -2147483648 ; // go through the loop again
          }
 
-         else if( b < 1 )
-            cout << "Number of Bunnies must be a positive number! Try again: " ;
+         else if( b < -2147483647 )
+            cout << "Entry must be number! Try again:  " ;
     }
         cout << "Enter the operation";
 
@@ -198,26 +194,26 @@ else {cout<<"Invalid operation!"<<endl; ;}
 
 }
 if(a==5){
-            while(true){
 
-    cout << "write the operation then the var" <<endl;
+    cout << "Operations are sinh, cosh, tanh, " <<endl;
+    cout <<"for inverse: asinh, acosh, atanh"<<endl;
 
 while( b < -2147483647 )
     {
-         cout << "\nNumber of b  ";
+         cout << "Enter Variable 1: ";
 
          char z ;
          // if failed to read or the character just after the number is not a white space
          if( !( cin >> b ) || ( cin.get(z) && !isspace(z) ) )
          {
-             cout << "Entry must be a whole number! Try again: " ;
+             cout << "Entry must be number! Try again: " ;
              cin.clear();
              cin.ignore( 500, '\n' );
              b = -2147483648 ; // go through the loop again
          }
 
-         else if( b < 1 )
-            cout << "Number of Bunnies must be a positive number! Try again: " ;
+         else if( b < -2147483647 )
+            cout << "Entry must be number! Try again:  " ;
     }
         cout << "Enter the operation";
 
@@ -231,7 +227,7 @@ else if (d=="acosh"){cout << "the result is "<< acosh(b)<<endl; }
 else if (d=="atanh"){cout << "the result is "<< atanh(b)<<endl; }
 else {cout<<"Invalid operation!"<<endl; ;}
 
-                }}
+                }
 string x;
    cout <<"do you need new operation: type yes or no for answer"<< endl;
     cin >> x;

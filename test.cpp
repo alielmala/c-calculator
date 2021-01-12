@@ -185,7 +185,7 @@ int main()
             else if (b < -2147483647.1)
                 cout << "Entry must be number! Try again:  ";
         }
-        cout << "Enter the operation";
+        cout << "Enter the operation: ";
         cin >> d;
         if (d == "sinh") { cout << "the result is " << sinh(b) << endl; }
         else if (d == "cosh") { cout << "the result is " << cosh(b) << endl; }
